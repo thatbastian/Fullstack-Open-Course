@@ -6,7 +6,7 @@ sequenceDiagram
 
     Browser->>Server: 302 POST a /new_note
     Server->>Database: Save note
-    Note right of browser: Database in this diagram is https://studies.cs.helsinki.fi/exampleapp/data.json
+    Note right of Database: Database in this diagram is https://studies.cs.helsinki.fi/exampleapp/data.json
     Database-->>Server: OK
     Server-->>Browser: Redirect to /notes
     Browser->>Server: 200 GET /notes
